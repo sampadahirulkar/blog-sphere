@@ -1,73 +1,142 @@
+"use client";
 import Header from '../app/components/header'
 import Footer from '../app/components/footer'
 import Name from '../app/components/name'
 import Image from 'next/image'
 import Newsletter from '../app/components/newsletter'
+import Comments from '../app/comments/comments'
+import Link from 'next/link'
+import Logo from "../app/components/logo"
+import Card1 from './components/card1'
+import Card2 from './components/card2'
+import { motion, AnimatePresence } from 'framer-motion'
+
+
 
 // issues:
 // 
-// 2. background issue with global.css
+// 
 // 3. image importing
 
 
 export default function Home(){
   return(
     <div>
+      <div className='shadow-2xl'>
       <Name />
-      <Header /> 
-      <div className='container mx-auto md:px-2 py-16 w-1/2'>
-        <div className='flex justify-center'>
-          <div className='py-10 text-center'>
-            <span className="text-3xl text-fuchsia-950 tracking-tight text-center font-serif">
-              Sample blog title: and its brief description
-            </span>
-            <div className="py-5 text-fuchsia-950 text-sm">
-              <p>dummy author</p>
-              <p>14 July 23</p>
-            </div>      
+      </div>
+      <div className='shadow-2xl'>
+      <Header />
+      </div>
+      {/* 
+      <div className='justify-center flex flex-col py-10 text-center grid grid-cols-3 gap-6'>
+        <div className=' flex flex-col text-left px-20 '>
+        <h1 className='text-pink-950 text-xl py-10 '>Browse our categories...</h1>
+        <span className='py-3'>
+           <Link href={"http://localhost:3000/All-about-5G"} className="bg-slate-400 px-5 py-2 rounded-full text-slate-50 text-sm ">
+            All about 5G
+          </Link>
+        </span>
+        <span className='py-3'>
+          <Link href={"http://localhost:3000/Artificial-Intelligence"} className="bg-slate-400 px-5 py-2 rounded-full text-slate-50 text-sm ">
+            Artificial Intelligence
+          </Link>
+        </span>
+        <span className='py-3'>
+          <Link href={"http://localhost:3000/Blockchain-and-Crypto"} className="bg-slate-400 px-5 py-2 rounded-full text-slate-50 text-sm ">
+            Blockchain and Cryptocurrency
+          </Link>
+        </span>
+        <span className='py-3 mb-20'>
+          <Link href={"http://localhost:3000/Cybersecurity"} className="bg-slate-400 px-5 py-2 rounded-full text-slate-50 text-sm ">
+            Cybersecurity and privacy
+          </Link>
+        </span>
+        </div>
+        
+        
+      </div> 
+      <Comments
+        commentsUrl="http://localhost:3000"
+        currentUserId = "1"/>*/}
+      <div className='m-auto'>
+        <Image className='w-full h-full object-cover rounded-ig'
+             src={"/Unknown.png"}
+             alt="Blogsphere"
+             width={100}
+             height={750}
+             />
+      </div>
+      
+
+
+
+
+
+
+
+
+      <div className='m-20 bg-gray-300 w-auto h-48 text-center text-slate-50'>
+          Ad Space
+      </div>
+      <div className="grid grid-cols-6 gap-6 m-20">
+        <div>
+          <div className="bg-gray-300 h-screen text-slate-50 text-center inline-block align-middle w-32">
+            Ad Space
+          </div>
+          <div className="bg-gray-300 h-screen text-slate-50 text-center inline-block align-middle w-32 mt-5">
+            Ad Space
           </div>
         </div>
-        <div className='py-10 text-slate-700'>
-          <p className='py-5'>
-            Amidst the swirling chaos of the city, a lone figure 
-            walked the rain-soaked streets. Their footsteps echoed through the empty 
-            alleyways, a symphony of solitude. The neon lights flickered overhead, 
-            casting an ethereal glow on the damp pavement.Lost in their own thoughts,
-            the figure meandered aimlessly, seeking solace in the night's embrace. Ea
-            ch step was a release, a cathartic rhythm that echoed their inner tur
-            moil. Memories danced like shadows, fragments of a life once lived.
-          </p>
-          <p className='py-5'>
-            The scent of freshly brewed coffee wafted from a nearby café, enticing t
-            he senses and luring the figure closer. A moment of respite awaited withi
-            n those familiar walls, a temporary escape from the enigmatic puzzle of ex
-            istence.Sitting by the window, a steaming cup in hand, the figure watched 
-            the world go by. Strangers passed like fleeting glimpses of parallel unive
-            rses, each with their own stories and secrets. The ebb and flow of humanit
-            y echoed in the cacophony of voices and the symphony of car horns.Outside,
-            raindrops painted a shimmering canvas on the glass, blurring the line bet
-            ween reality and dreams. The figure's mind wandered through realms unknown, exploring the vast expanses of imagination. Ideas swirled like galaxies, waiting to be grasped and transformed into something tangible.
-          </p>
-          <p className='py-5'>
-            Time slipped away, unnoticed and unheeded. The night wore on, and the figu
-            re reluctantly bid farewell to the refuge of the café. With a renewed sense
-            of purpose, they stepped back into the labyrinthine city, ready to navigate 
-            its maze once more.Guided by the distant glow of the moon, the figure walk
-            ed into the unknown, embracing the uncertainty that lay ahead. Every step 
-            was a testament to resilience, a declaration of defiance against the chao
-            s that sought to engulf them.
-          </p>
-          <p className='py-5'>
-            And so, the figure vanished into the night, becoming a part of the ever-
-            changing tapestry of existence. Their story intertwined with countless ot
-            hers, a testament to the boundless potential of the human spirit."Please 
-            note that this text was randomly generated by an AI model and may not hav
-            e a coherent meaning or storyline.
-          </p>
+        <div className="col-span-3">
+          <div className='bg-violet-200 h-16 w-3/4 text-gray-800 m-0 shadow-xl'>
+            <div className='inline-block align-text-bottom text-3xl m-5 font-mono'>
+              Recent Posts...
+            </div>
+          </div>
+          <div className='py-12'>
+          <Card1/>
+          </div>
+          <div className='py-12'>
+          <Card2/>
+          </div>
+          <div className='py-12'>
+          <Card1/>
+          </div>
+          <div className='py-12'>
+          <Card2/>
+          </div>
+          <div className='py-12'>
+          <Card1/>
+          </div>
         </div>
-      </div>
-      {/* <Newsletter /> */}
+        <div className="col-span-2">
+          <AnimatePresence>
+            <motion.div initial={{opacity:0, y:15}}
+                        animate={{opacity:1, y:0}}
+                        exit={{opacity:0, y:15}}
+                        transition={{delay: 0.25}}>
+              <div className='sticky top-10 left-0 right-0 bg-violet-200 w-auto h-160 shadow-xl'>
+                <div className='font-mono text-xl text-gray-800 text-center py-10'>
+                  Browse by category
+                </div>
+                <div id="default-carousel" data-carousel="static" className='text-gray-800 flex flex-col text-center font-mono'>
+                  <div className='py-4'><Link href={'/All-about-5G'}>All about 5G</Link></div>
+                  <div className='py-4'><Link href={'/Blockchain-and-Crypto'}>Blockchain and Crypto</Link></div>
+                  <div className='py-4'><Link href={'/Artificial-Intelligence'}>Artificial Intelligence</Link></div>
+                  <div className='py-4'><Link href={'/Cybersecurity'}>Cybersecurity</Link></div>
+                  <div className='py-4'><Link href={'/Blockchain-and-Crypto'}>Blockchain and Crypto</Link></div>
+                  <div className='py-4'><Link href={'/Artificial-Intelligence'}>Artificial Intelligence</Link></div>
+                  <div className='py-4 mb-10'><Link href={'/All-about-5G'}>All about 5G</Link></div>
+                </div>
+              </div>
+            </motion.div>
+          </AnimatePresence>
+        </div>
+      </div> 
+
+      <Newsletter />
       <Footer />
-    </div>
+    </div>  
   )
 }

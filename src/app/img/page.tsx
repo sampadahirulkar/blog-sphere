@@ -6,7 +6,7 @@ export default function section1() {
     
         <div className="grid md:grid-cols-2">
             <div className="image">
-            <Image src={"../app/images/img1.jpg"} alt="sample" width={100} height={100} />
+            <Image src={"/img1.jpg"} alt="sample" width={500} height={300} />
             </div>
             <div className="info">
 
