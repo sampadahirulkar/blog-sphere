@@ -10,7 +10,6 @@ import {
   updateComment as updateCommentApi,
   deleteComment as deleteCommentApi,
 } from "../api";
-import { ImCompass } from "react-icons/im";
 
 const Comments = ({ commentsUrl, currentUserId }) => {
   const [backendComments, setBackendComments] = useState([]);
