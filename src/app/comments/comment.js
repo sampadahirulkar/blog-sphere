@@ -1,4 +1,4 @@
-import CommentForm from "./CommentForm";
+import CommentForm from "./commentform";
 import { ImUser ,ImReply ,ImPencil ,ImBin } from "react-icons/im";
 
 
@@ -114,6 +114,6 @@ const Comment = ({
     </div>
     </div>
   );
-};
+}; 
 
 export default Comment;

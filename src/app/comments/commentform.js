@@ -13,7 +13,7 @@ const CommentForm = ({
     event.preventDefault();
     handleSubmit(text);
     setText("");
-  };
+  }; 
   return (
     <form onSubmit={onSubmit}>
       <textarea
