@@ -40,7 +40,7 @@ export default function page() {
         
        
          <div className='text-violet-900 text-center font-mono mt-60'>
-        <Link href="http://localhost:3000/homepage">Click to discover</Link>
+        <Link href="/homepage">Click to discover</Link>
         </div>
     </> 
   )
