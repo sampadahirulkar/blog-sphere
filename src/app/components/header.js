@@ -54,16 +54,16 @@ export default function Header(){
 
         </div>
         <div className='text-gray-800 hover:text-gray-500'>
-          <Link href={"/"}>Trending</Link>
+          <Link href={"/coming_soon"}>Trending</Link>
         </div>
         <div className='text-gray-800 hover:text-gray-500'>
-          <Link href="/homepage">Careers</Link>
+          <Link href="/coming_soon">Careers</Link>
         </div>
         <div className='text-gray-800 hover:text-gray-500'>
           <Link href="/AboutUs">About us</Link>
         </div>
         <div className='text-gray-800 hover:text-gray-500'>
-          <Link href="/">Socials</Link>
+          <Link href="/coming_soon">Socials</Link>
         </div>
       </div>
     </header>
