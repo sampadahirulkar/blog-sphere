@@ -1,14 +1,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://localhost:3000/homepage</loc>
+    <loc>/homepage</loc>
     <lastmod>2023-04-06T15:02:24.021Z</lastmod>
   </url>
   <url>
-    <loc>http://localhost:3000/All-about-5G</loc>
+    <loc>/All-about-5G</loc>
     <lastmod>2023-04-06T15:02:24.021Z</lastmod>
   </url>
   <url>
-    <loc>http://localhost:3000/Blockchain-and-Crypto</loc>
+    <loc>/Blockchain-and-Crypto</loc>
     <lastmod>2023-04-06T15:02:24.021Z</lastmod>
   </url>
 </urlset>
