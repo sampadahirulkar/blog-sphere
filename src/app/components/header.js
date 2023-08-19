@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import {ImHome} from "react-icons/im"
 import Link from 'next/link'
@@ -54,10 +55,10 @@ export default function Header(){
 
         </div>
         <div className='text-gray-800 hover:text-gray-500'>
-          <Link href={"/coming_soon"}>Trending</Link>
+          <Link href={"http://localhost:3000/coming_soon"}>Trending</Link>
         </div>
         <div className='text-gray-800 hover:text-gray-500'>
-          <Link href="/coming_soon">Careers</Link>
+          <Link href="http://localhost:3000/coming_soon">Careers</Link>
         </div>
         <div className='text-gray-800 hover:text-gray-500'>
           <Link href="/AboutUs">About us</Link>
