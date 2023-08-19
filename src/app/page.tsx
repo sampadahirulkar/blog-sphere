@@ -24,7 +24,8 @@ export default function page() {
              objectFit='cover'
              />
         </div>
-        <div className='flex flex-row ml-20 py-40'>
+        <div className='py-20'></div>
+        <div className='flex flex-row ml-20 py-10'>
             <div className='text-8xl px-8'>B</div>
             <div className='text-8xl px-8'>L</div>
             <div className='text-8xl px-8'>O</div>
@@ -36,8 +37,9 @@ export default function page() {
             <div className='text-8xl px-8'>R</div>
             <div className='text-8xl px-8'>E</div>
         </div>
+        
        
-         <div className='text-slate-100 text-center font-mono mt-48'>
+         <div className='text-violet-900 text-center font-mono mt-60'>
         <Link href="http://localhost:3000/homepage">Click to discover</Link>
         </div>
     </> 

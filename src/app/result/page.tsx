@@ -103,7 +103,9 @@ const SearchResults: React.FC = () => {
             Search Results for {query} ....
             </div>
           </div>
-        
+        {/* <div className='text-slate-500'>
+          {paginatedBlogs.length}
+        </div> */}
         <div> 
             {paginatedBlogs.map((blog) => (
                 <BlogCard key={blog.id} blog={blog}/>

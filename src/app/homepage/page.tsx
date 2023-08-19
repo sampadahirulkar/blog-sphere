@@ -9,6 +9,7 @@ import Card1 from '../components/card1'
 import { useState } from 'react';
 import {BlogsData} from '@/app/helpers/blogData';
 import Head from 'next/head';
+import { AnimatePresence } from 'framer-motion';
 
 
 export default function Home(){
@@ -81,12 +82,26 @@ export default function Home(){
                 Next</button>
           </div>
         </div>
+
+
+
         <div className="col-span-2">
+        
           <div className='sticky top-10 left-0 right-0 bg-violet-200 w-auto h-160 shadow-xl'>
             <div className='transform: translateX(100%) transition: 1s'>
+            {/* <AnimatePresence>
+            {isVisible && (
+              <motion.div
+                key="modal"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+              />
+            )} */}
               <div className='font-mono text-xl text-gray-800 text-center py-10'>
                 Browse by category
               </div>
+              {/* </AnimatePresence> */}
               <div id="default-carousel" data-carousel="static" className='text-gray-800 flex flex-col text-center font-mono'>
                 <div className='py-4'><Link href={'/category/All_about_5G'} className="hover:text-gray-500">All about 5G</Link></div>
                 <div className='py-4'><Link href={'/category/Blockchain_and_Crypto'} className="hover:text-gray-500">Blockchain and Crypto</Link></div>
